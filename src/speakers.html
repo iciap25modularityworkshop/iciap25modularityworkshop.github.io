@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers - ICIAP 2025 Breaking the Monolith Workshop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .speakers-intro {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .speaker-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .speaker-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .speaker-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .speaker-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .speaker-info {
+            padding: 20px;
+        }
+        
+        .speaker-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0c4da2;
+            margin-bottom: 5px;
+        }
+        
+        .speaker-title {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .speaker-bio {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .talk-info {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        
+        .talk-title {
+            font-weight: bold;
+            color: #e63946;
+            margin-bottom: 10px;
+        }
+        
+        .talk-abstract {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Keynote Speakers</h2>
+        </div>
+    </section>
+
+    <section class="speakers">
+        <div class="container">
+            <div class="speakers-intro">
+                <h2>Distinguished Speakers</h2>
+                <p>We are honored to host leading experts in modular deep learning who will share their insights and latest research at the "Breaking the Monolith: 1st Workshop on Advances in Modular Deep Learning".</p>
+            </div>
+            
+            <div class="speaker-grid">
+                <div class="speaker-card">
+                    <img src="images/andrew.jpg" alt="Prof. Andrew David Bagdanov" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">Prof. Andrew David Bagdanov</h3>
+                        <p class="speaker-title">Associate Professor, University of Florence, Italy</p>
+                        <p class="speaker-bio">TODO</p>
+                        
+                        <div class="talk-info">
+                            <h4 class="talk-title">TODO</h4>
+                            <p class="talk-abstract">TODO</p>
+                            <p><strong>Date:</strong> TODO</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="speaker-card">
+                    <img src="images/rodola.jpg" alt="Prof. Emanuele Rodolà" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">Prof. Emanuele Rodolà</h3>
+                        <p class="speaker-title">Professor of Computer Science, Sapienza University of Rome, Italy</p>
+                        <p class="speaker-bio">TODO</p>
+                        
+                        <div class="talk-info">
+                            <h4 class="talk-title">TODO</h4>
+                            <p class="talk-abstract">TODO</p>
+                            <p><strong>Date:</strong> TODO</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="speaker-card">
+                    <img src="images/mbosc.jpg" alt="Dr. Matteo Boschini" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">Dr. Matteo Boschini</h3>
+                        <p class="speaker-title">Head of AI, Symboolic S.r.l.</p>
+                        <p class="speaker-bio">
+                            TODO
+                        </p>
+                        
+                        <div class="talk-info">
+                            <h4 class="talk-title">TODO</h4>
+                            <p class="talk-abstract">TODO</p>
+                            <p><strong>Date:</strong> TODO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speakers-note" style="margin-top: 40px; padding: 20px; background-color: #f0f4f8; border-radius: 5px;">
+                <p><strong>Note:</strong> Additional invited speakers will be announced soon. Check back for updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

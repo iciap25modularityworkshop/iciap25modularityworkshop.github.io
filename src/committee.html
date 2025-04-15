@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committee - ICIAP 2025 Breaking the Monolith Workshop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .committee-section {
+            margin-bottom: 40px;
+        }
+        
+        .committee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .committee-member {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .member-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #0c4da2;
+        }
+        
+        .member-affiliation {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .member-bio {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Committee</h2>
+        </div>
+    </section>
+
+    <section class="committee">
+        <div class="container">
+            <div class="committee-section">
+                <h2>Workshop Organizers</h2>
+                <div class="committee-grid">
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Angelo Porrello</h3>
+                        <p class="member-affiliation">Assistant Professor, University of Modena and Reggio Emilia, Italy</p>
+                        <p class="member-bio">Angelo Porrello has been a member of the research group AimageLab at the Department of Engineering "Enzo Ferrari" in Modena for eight years. His primary research areas include incremental and modular training paradigms for deep neural networks and development of predictive AI systems.</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Lorenzo Bonicelli</h3>
+                        <p class="member-affiliation">Post-Doc, University of Modena and Reggio Emilia, Italy</p>
+                        <p class="member-bio">Lorenzo Bonicelli is a postdoctoral fellow focusing on continual learning and its applications on complex scenarios including noisy, biased, or missing annotations, rehearsal and data-free environments, multi-modal, and composition-based learning.</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Pietro Buzzega</h3>
+                        <p class="member-affiliation">PhD Student, University of Modena and Reggio Emilia, Italy</p>
+                        <p class="member-bio">Pietro Buzzega is a researcher at AImageLab, with work centering on incremental and modular learning paradigms for deep neural networks, with a particular emphasis on decentralized architectures.</p>
+                    </div>
+
+                    <div class="committee-member">
+                        <h3 class="member-name">Donato Crisostomi</h3>
+                        <p class="member-affiliation">PhD Student, Sapienza University of Rome, Italy</p>
+                        <p class="member-bio">Donato Crisostomi is a researcher at Sapienza University of Rome, focusing on model merging and representational alignment. He currently leads the "Model Reuse" work package for the FIS project "NEXUS" and previously held roles at Amazon.</p>
+                    </div>
+
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Simone Palazzo</h3>
+                        <p class="member-affiliation">Assistant Professor, University of Catania, Italy</p>
+                        <p class="member-bio">Simone Palazzo has been pursuing research in computer vision, medical imaging, continual learning, and explainable AI. He is author of 150+ peer-reviewed scientific papers and is associate editor at ACM Transactions on Intelligent Systems and Technology.</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Giovanni Bellitto</h3>
+                        <p class="member-affiliation">Assistant Professor, University of Catania, Italy</p>
+                        <p class="member-bio">Giovanni Bellitto's research interests center on machine learning and artificial intelligence, with a particular focus on neuro-inspired incremental learning, federated learning and medical image analysis.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="committee-section">
+                <h2>Program Committee</h2>
+                <div class="note">
+                    <p><strong>Disclaimer:</strong> More members will be added soon.</p>
+                </div>
+                <!-- <div class="committee-grid">
+                    <div class="committee-member">
+                        <h3 class="member-name">Prof. Alessandro Verdi</h3>
+                        <p class="member-affiliation">University of Bologna, Italy</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Maria Romano</h3>
+                        <p class="member-affiliation">CNR Institute of Applied Sciences, Italy</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Prof. James Lee</h3>
+                        <p class="member-affiliation">Stanford University, United States</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Emma Wilson</h3>
+                        <p class="member-affiliation">Imperial College London, United Kingdom</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Prof. Hiroshi Tanaka</h3>
+                        <p class="member-affiliation">Tokyo Institute of Technology, Japan</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Clara Moretti</h3>
+                        <p class="member-affiliation">ETH Zürich, Switzerland</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Prof. Luis Rodriguez</h3>
+                        <p class="member-affiliation">Technical University of Madrid, Spain</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Sophie Mueller</h3>
+                        <p class="member-affiliation">Max Planck Institute, Germany</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Prof. Alexei Petrov</h3>
+                        <p class="member-affiliation">Moscow State University, Russia</p>
+                    </div>
+                </div> -->
+            </div>
+            
+            <div class="committee-section">
+                <h2>Organizing Committee</h2>
+                <div class="note">
+                    <p><strong>Disclaimer:</strong> More members will be added soon.</p>
+                </div>
+                <!-- <div class="committee-grid">
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Paolo Ferrari</h3>
+                        <p class="member-affiliation">University of Rome La Sapienza, Italy</p>
+                        <p class="member-bio">Head of local arrangements</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Laura Conti</h3>
+                        <p class="member-affiliation">University of Rome La Sapienza, Italy</p>
+                        <p class="member-bio">Publications Chair</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Giovanni Russo</h3>
+                        <p class="member-affiliation">University of Rome La Sapienza, Italy</p>
+                        <p class="member-bio">Web Chair</p>
+                    </div>
+                    
+                    <div class="committee-member">
+                        <h3 class="member-name">Dr. Julia Martinez</h3>
+                        <p class="member-affiliation">University of Rome Tor Vergata, Italy</p>
+                        <p class="member-bio">Publicity Chair</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
