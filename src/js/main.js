@@ -65,32 +65,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Mobile menu toggle functionality
-    const navItems = document.querySelector('nav ul');
-    const hamburgerMenu = document.createElement('div');
-    hamburgerMenu.className = 'hamburger-menu';
-    hamburgerMenu.innerHTML = '<span></span><span></span><span></span>';
+    // const navItems = document.querySelector('nav ul');
+    // const hamburgerMenu = document.createElement('div');
+    // hamburgerMenu.className = 'hamburger-menu';
+    // hamburgerMenu.innerHTML = '<span></span><span></span><span></span>';
     
-    document.querySelector('nav').prepend(hamburgerMenu);
+    // document.querySelector('nav').prepend(hamburgerMenu);
     
-    hamburgerMenu.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navItems.classList.toggle('show');
-    });
+    // hamburgerMenu.addEventListener('click', function() {
+    //     this.classList.toggle('active');
+    //     navItems.classList.toggle('show');
+    // });
     
     // Current year for copyright
     const year = new Date().getFullYear();
     document.querySelectorAll('.copyright p').forEach(el => {
         el.innerHTML = el.innerHTML.replace('2025', year);
     });
-    
-    // Add page header background styling
-    const pageHeader = document.querySelector('.page-header');
-    if (pageHeader) {
-        pageHeader.style.background = 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/rome.jpg") no-repeat center center';
-        pageHeader.style.backgroundSize = 'cover';
-        pageHeader.style.color = 'white';
-        pageHeader.style.textAlign = 'center';
-        pageHeader.style.padding = '80px 0';
-        pageHeader.style.marginBottom = '40px';
-    }
 });

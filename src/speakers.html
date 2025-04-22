@@ -12,10 +12,10 @@
         }
         
         .speaker-grid {
-            display: grid;
+            /* display: grid; */
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 40px;
-            margin-top: 40px;
+            /* margin-top: 40px; */
         }
         
         .speaker-card {
@@ -24,6 +24,9 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
         
         .speaker-card:hover {
@@ -31,13 +34,18 @@
         }
         
         .speaker-image {
-            width: 100%;
-            height: 250px;
+            width: 25%;
+            /* height: 250px; */
             object-fit: cover;
         }
         
         .speaker-info {
             padding: 20px;
+            /* justify content */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 75%;
         }
         
         .speaker-name {
@@ -57,6 +65,7 @@
         .speaker-bio {
             margin-bottom: 15px;
             line-height: 1.6;
+            text-align: justify;
         }
         
         .talk-info {
@@ -80,11 +89,11 @@
 <body>
     <div id="header"></div>
 
-    <section class="page-header">
+    <!-- <section class="page-header">
         <div class="container">
             <h2>Keynote Speakers</h2>
         </div>
-    </section>
+    </section> -->
 
     <section class="speakers">
         <div class="container">
@@ -101,11 +110,11 @@
                         <p class="speaker-title">Associate Professor, University of Florence, Italy</p>
                         <p class="speaker-bio">TODO</p>
                         
-                        <div class="talk-info">
+                        <!-- <div class="talk-info">
                             <h4 class="talk-title">TODO</h4>
                             <p class="talk-abstract">TODO</p>
                             <p><strong>Date:</strong> TODO</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 
@@ -116,16 +125,16 @@
                         <p class="speaker-title">Professor of Computer Science, Sapienza University of Rome, Italy</p>
                         <p class="speaker-bio">TODO</p>
                         
-                        <div class="talk-info">
+                        <!-- <div class="talk-info">
                             <h4 class="talk-title">TODO</h4>
                             <p class="talk-abstract">TODO</p>
                             <p><strong>Date:</strong> TODO</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 
                 <div class="speaker-card">
-                    <img src="images/mbosc.jpg" alt="Dr. Matteo Boschini" class="speaker-image">
+                    <img src="images/mbosc.png" alt="Dr. Matteo Boschini" class="speaker-image">
                     <div class="speaker-info">
                         <h3 class="speaker-name">Dr. Matteo Boschini</h3>
                         <p class="speaker-title">Head of AI, Symboolic S.r.l.</p>
@@ -133,11 +142,11 @@
                             Matteo Boschini received his Ph.D. degree in 2023 at the University of Modena and Reggio Emilia, Italy, within the AImageLab research group, working on machine learning, continual learning, and computer vision. He is currently Head of AI at Symboolic, working on applied generative language modelling.
                         </p>
                         
-                        <div class="talk-info">
+                        <!-- <div class="talk-info">
                             <h4 class="talk-title">TODO</h4>
                             <p class="talk-abstract">TODO</p>
                             <p><strong>Date:</strong> TODO</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

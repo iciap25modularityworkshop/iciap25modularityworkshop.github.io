@@ -138,6 +138,7 @@ nav {
     float: right;
     position: relative;
     transform: translateY(50%);
+    min-width: 600px;
 }
 
 nav ul {
@@ -167,7 +168,7 @@ nav ul li a:hover, nav ul li a.active {
 
 /* ========== Hero Section Styles ========== */
 .hero {
-    background: linear-gradient(rgba(35, 41, 70, 0.7), rgba(238, 187, 195, 0.3)), url('../images/rome.jpg') no-repeat center center;
+    background: linear-gradient(rgba(35, 41, 70, 0.7), rgba(238, 187, 195, 0.3)), url('../images/sapienza.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -178,11 +179,11 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
     background: rgba(35, 41, 70, 0.45);
     padding: 18px 10px;
-    border-radius: 18px;
+    border-radius: 4px;
     box-shadow: 0 2px 16px rgba(35, 41, 70, 0.10);
 }
 
@@ -312,7 +313,7 @@ footer {
 }
 
 /* ========== Responsive Styles ========== */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
     .container {
         width: 98%;
         padding: 0 8px;
@@ -320,16 +321,20 @@ footer {
     .footer-content {
         grid-template-columns: 1fr;
     }
+    nav {
+        float:right
+    }
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        padding-top: 120px; /* Adjust for taller header on mobile */
-    }
-    
+@media screen and (max-width: 950px) {
     header {
-        height: auto;
-        min-height: 110px;
+        /* height: auto;
+        min-height: 110px; */
+        padding: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     }
     
     .hamburger-menu {
@@ -344,25 +349,23 @@ footer {
     }
     
     nav {
-        float: none;
+        min-width: 100%;
         text-align: center;
-        margin-top: 5px;
         margin-bottom: 10px;
+        transform: none;
     }
     
     nav ul {
-        display: none;
         flex-direction: column;
-        position: absolute;
-        top: 110px; /* Position below the header */
-        left: 0;
         width: 100%;
-        background-color: white;
-        padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 0 0 0;
         z-index: 100;
     }
-    
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
     nav ul.show {
         display: flex;
     }
@@ -380,7 +383,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     nav ul li {
-        display: block;
+        /* display: block; */
         margin: 10px 0;
     }
     .hero h2 {
