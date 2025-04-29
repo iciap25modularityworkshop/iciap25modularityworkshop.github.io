@@ -25,12 +25,17 @@
             overflow: hidden;
             transition: transform 0.3s;
             display: flex;
-            flex-direction: row;
-            align-items: center;
+            flex-direction: column;
         }
         
         .speaker-card:hover {
             transform: translateY(-5px);
+        }
+        
+        .speaker-top-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
         
         .speaker-image {
@@ -70,7 +75,7 @@
         
         .talk-info {
             margin-top: 20px;
-            padding-top: 15px;
+            padding: 15px 20px;
             border-top: 1px solid #eee;
         }
         
@@ -104,49 +109,52 @@
             
             <div class="speaker-grid">
                 <div class="speaker-card">
-                    <img src="images/andrew_bagdanov.jpg" alt="Prof. Andrew David Bagdanov" class="speaker-image">
-                    <div class="speaker-info">
-                        <h3 class="speaker-name">Prof. Andrew David Bagdanov</h3>
-                        <p class="speaker-title">Associate Professor, University of Florence, Italy</p>
-                        <p class="speaker-bio">Andrew D. Bagdanov is currently Associate Professor at the University of Florence, Italy. He received his PhD in computer science in 2004 from the University of Amsterdam, after which he held a postdoctoral position at the University of Florence and a senior development position at the FAO of the United Nations. In 2013 he became Senior Researcher and Ramón y Cajal Fellow at the Computer Vision Center, Barcelona, and in 2015 began his tenure as Associate Professor at the University of Florence. He is the coordinator of the Master's Program in Artificial Intelligence at the University of Florence, and he leads a small research group whose research spans a broad spectrum of computer vision, image processing and deep learning.</p>
-                        
-                        <!-- <div class="talk-info">
-                            <h4 class="talk-title">TODO</h4>
-                            <p class="talk-abstract">TODO</p>
-                            <p><strong>Date:</strong> TODO</p>
-                        </div> -->
+                    <div class="speaker-top-row">
+                        <img src="images/andrew_bagdanov.jpg" alt="Prof. Andrew David Bagdanov" class="speaker-image">
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">Prof. Andrew David Bagdanov</h3>
+                            <p class="speaker-title">Associate Professor, University of Florence, Italy</p>
+                            <p class="speaker-bio">Andrew D. Bagdanov is currently Associate Professor at the University of Florence, Italy. He received his PhD in computer science in 2004 from the University of Amsterdam, after which he held a postdoctoral position at the University of Florence and a senior development position at the FAO of the United Nations. In 2013 he became Senior Researcher and Ramón y Cajal Fellow at the Computer Vision Center, Barcelona, and in 2015 began his tenure as Associate Professor at the University of Florence. He is the coordinator of the Master's Program in Artificial Intelligence at the University of Florence, and he leads a small research group whose research spans a broad spectrum of computer vision, image processing and deep learning.</p>
+                        </div>
+                    </div>
+                    <div class="talk-info">
+                        <h4 class="talk-title">TBD</h4>
+                        <!-- <p class="talk-abstract">TBD</p> -->
+                        <p><strong>Date:</strong> TBD</p>
                     </div>
                 </div>
                 
                 <div class="speaker-card">
-                    <img src="images/rodola.jpg" alt="Prof. Emanuele Rodolà" class="speaker-image">
-                    <div class="speaker-info">
-                        <h3 class="speaker-name">Prof. Emanuele Rodolà</h3>
-                        <p class="speaker-title">Professor of Computer Science, Sapienza University of Rome, Italy</p>
-                        <p class="speaker-bio">TODO</p>
-                        
-                        <!-- <div class="talk-info">
-                            <h4 class="talk-title">TODO</h4>
-                            <p class="talk-abstract">TODO</p>
-                            <p><strong>Date:</strong> TODO</p>
-                        </div> -->
+                    <div class="speaker-top-row">
+                        <img src="images/rodola.jpg" alt="Prof. Emanuele Rodolà" class="speaker-image">
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">Prof. Emanuele Rodolà</h3>
+                            <p class="speaker-title">Full Professor of Computer Science, Sapienza University of Rome, Italy</p>
+                            <p class="speaker-bio">Emanuele Rodolà is a Full Professor of Computer Science at Sapienza University of Rome, where he leads the GLADIA AI group. His work in this field is supported by an ERC grant, a FIS grant, and a Google Research Award. In the past, he was a postdoctoral researcher at USI Lugano (2016–2017), an Alexander von Humboldt Fellow at TU Munich (2013–2016), and a JSPS Research Fellow at the University of Tokyo (2013), in addition to visiting periods at Tel Aviv University, Technion, École Polytechnique, and Stanford. He is a fellow of ELLIS and the only Italian AI researcher to be a fellow of the Young Academy of Europe. Professor Rodolà has received numerous awards for his research and plays an active role in the academic community, serving on program committees and as Area Chair for major conferences in AI and ML. His current research focuses primarily on neural model fusion, representation learning, ML for audio and music, and multimodal learning, with around 170 publications in these areas. His work has been featured in media outlets including Fortune, Wired, Italian national broadcast and newspapers.</p>
+                        </div>
+                    </div>
+                    <div class="talk-info">
+                        <h4 class="talk-title">Model Merging - What, Why, and How</h4>
+                        <p class="talk-abstract">In this talk, I will introduce the emerging field of model merging — the process of combining multiple neural networks into a single model without retraining. We'll begin with foundational concepts such as linear mode connectivity and task vectors, and explore two main settings: (1) merging models trained from scratch on the same task but with different initializations, and (2) merging models finetuned on different tasks from a shared pretrained base. I will then present a series of recent works of mine that expand the model merging toolkit. These include the use of cycle consistency in permutation-based merging, insights into how task vectors relate to gradients, SVD-based approaches for low-rank model combination, and the application of evolutionary algorithms to discover optimal merging coefficients. Throughout, we'll see how these techniques can be applied in real-world scenarios, from model compression in Computer Vision to state-of-the-art synthesis of LLMs for low-resource languages.</p>
+                        <p><strong>Date:</strong> TBD</p>
                     </div>
                 </div>
                 
                 <div class="speaker-card">
-                    <img src="images/mbosc.png" alt="Dr. Matteo Boschini" class="speaker-image">
-                    <div class="speaker-info">
-                        <h3 class="speaker-name">Dr. Matteo Boschini</h3>
-                        <p class="speaker-title">Head of AI, Symboolic S.r.l.</p>
-                        <p class="speaker-bio">
-                            Matteo Boschini received his Ph.D. degree in 2023 at the University of Modena and Reggio Emilia, Italy, within the AImageLab research group, working on machine learning, continual learning, and computer vision. He is currently Head of AI at Symboolic, working on applied generative language modelling.
-                        </p>
-                        
-                        <!-- <div class="talk-info">
-                            <h4 class="talk-title">TODO</h4>
-                            <p class="talk-abstract">TODO</p>
-                            <p><strong>Date:</strong> TODO</p>
-                        </div> -->
+                    <div class="speaker-top-row">
+                        <img src="images/mbosc.png" alt="Dr. Matteo Boschini" class="speaker-image">
+                        <div class="speaker-info">
+                            <h3 class="speaker-name">Dr. Matteo Boschini</h3>
+                            <p class="speaker-title">Head of AI, Symboolic S.r.l.</p>
+                            <p class="speaker-bio">
+                                Matteo Boschini received his Ph.D. degree in 2023 at the University of Modena and Reggio Emilia, Italy, within the AImageLab research group, working on machine learning, continual learning, and computer vision. He is currently Head of AI at Symboolic, working on applied generative language modelling.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="talk-info">
+                        <h4 class="talk-title">TBD</h4>
+                        <!-- <p class="talk-abstract">TBD</p> -->
+                        <p><strong>Date:</strong> TBD</p>
                     </div>
                 </div>
             </div>
